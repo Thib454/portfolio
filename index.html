@@ -1,16 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <section id="cv">
-      <h2>Télécharger mon CV</h2>
-      <a href="CV-Thibault_Depeige.pdf" download target="_blank">
-        📄 Télécharger le CV en français (PDF)
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <!-- Section CV anglais intégrée -->
+    <section id="cv-en">
+      <h2>My CV (English)</h2>
+      <iframe 
+        src="CV_Thibault_Martin_EN.pdf" 
+        width="100%" 
+        height="600px" 
+        style="border:none;">
+        Your browser does not support iframes. 
+        You can <a href="CV_Thibault_Martin_EN.pdf" target="_blank">download the English CV here</a>.
+      </iframe>
+    </section>
+
+    <!-- Section téléchargement CV français -->
+    <section id="cv-fr">
+      <h2>Download my CV (French)</h2>
+      <a href="CV-Thibault_Depeige.pdf" download target="_blank" class="btn">
+        📄 Download CV (French PDF)
       </a>
     </section>
-  </body>
+
+    <!-- Section projets GitHub -->
+    <section id="github-projects">
+      <h2>My GitHub Projects</h2>
+      <div id="projects-list">
+        <!-- Projets chargés via JavaScript -->
+      </div>
+    </section>
+  </main>
+
+  <script src="github-projects.js"></script>
+</body>
 </html>
