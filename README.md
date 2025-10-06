@@ -7,8 +7,7 @@ This project showcases my resume, technical skills, experiences, and GitHub proj
 
 ## 🚀 Live Demo
 
-🔗 **[View Portfolio](https://thib454.github.io/portfolio/)**  
-_(Hosted on GitHub Pages — replace this link if needed)_
+🔗 **[View Portfolio](https://thib454.github.io/portfolio/)**
 
 ---
 
