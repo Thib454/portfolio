@@ -31,13 +31,3 @@ This portfolio includes:
 - GitHub Pages for deployment
 
 ---
-
-## 📂 File Structure
-
-portfolio/
-├── index.html # Main portfolio page
-├── CV-En.html # English CV (HTML)
-├── CV-Thibault_Depeige.pdf # French CV (PDF)
-├── style.css # Global styles
-├── github-projects.js # Script to fetch GitHub repos
-└── README.md # Project documentation
