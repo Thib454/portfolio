@@ -10,18 +10,45 @@
     <meta name="author" content="Thibault Depeige" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+
+    <script src="github-projects.js"></script>
+    <script src="script.js"></script>
   </head>
   <body>
     <!-- ✅ Navbar -->
     <header>
-      <nav class="navbar">
-        <div class="logo">Thibault Depeige</div>
+      <div class="logo" aria-label="Thibault Depeige logo">
+        <!-- Remplace la source ci-dessous par ton logo réel -->
+        <img
+          src="logo.png"
+          alt="Logo Thibault Depeige"
+          width="40"
+          height="40"
+        />
+        <!-- Ou juste du texte si pas de logo image -->
+        <!-- <span>Thibault Depeige</span> -->
+      </div>
+
+      <nav class="navbar" role="navigation" aria-label="Primary Navigation">
         <ul class="nav-links">
-          <li><a href="#cv-en">CV (EN)</a></li>
-          <li><a href="#cv-fr">CV (FR)</a></li>
-          <li><a href="#github-projects">Projects</a></li>
+          <li><a href="CV-En.html">Resume (EN)</a></li>
+          <li>
+            <a href="CV-Thibault_Depeige.pdf" download>Télécharger CV (FR)</a>
+          </li>
+          <li><a href="github-projects.js">Projects</a></li>
         </ul>
       </nav>
+
+      <button
+        class="menu-toggle"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+        aria-controls="primary-menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </header>
 
     <main>
@@ -49,8 +76,6 @@
         </div>
       </section>
     </main>
-
-    <script src="github-projects.js"></script>
 
     <footer>
       <p>© 2025 Thibault Depeige. All rights reserved.</p>
