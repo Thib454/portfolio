@@ -5,33 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Portfolio of Thibault Depeige, web developer. View resume and GitHub projects."
+      content="Portfolio of Thibault Depeige, Full Stack Developer. View resume, download CV, and explore GitHub projects."
     />
     <meta name="author" content="Thibault Depeige" />
-    <title>Portfolio</title>
+    <title>Thibault Depeige – Portfolio & Resume</title>
+
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <!-- ✅ Navbar -->
+    <!-- 🌐 Header & Navigation -->
     <header>
       <div class="logo" aria-label="Thibault Depeige logo">
-        <!-- Remplace la source ci-dessous par ton logo réel -->
-        <!-- <img
-          src="logo.png"
-          alt="Logo Thibault Depeige"
-          width="40"
-          height="40"
-        /> -->
-        <!-- Ou juste du texte si pas de logo image -->
         <span>Thibault Depeige</span>
       </div>
 
       <nav class="navbar" role="navigation" aria-label="Primary Navigation">
-        <ul class="nav-links">
+        <ul class="nav-links" id="primary-menu">
           <li><a href="CV-En.html">Resume (EN)</a></li>
-          <li>
-            <a href="Depeige_Thibault_CV.pdf" download>Télécharger CV (FR)</a>
-          </li>
+          <li><a href="Depeige_Thibault_CV.pdf" download>Download CV (FR)</a></li>
           <li>
             <a
               href="https://github.com/Thib454"
@@ -43,9 +35,10 @@
         </ul>
       </nav>
 
+      <!-- Mobile Menu Button -->
       <button
         class="menu-toggle"
-        aria-label="Toggle menu"
+        aria-label="Toggle navigation menu"
         aria-expanded="false"
         aria-controls="primary-menu"
       >
@@ -56,32 +49,35 @@
     </header>
 
     <main>
-      <!-- Section CV anglais -->
+      <!-- Resume (English) Section -->
       <section id="cv-en">
         <h2>My Resume (English)</h2>
         <a href="CV-En.html" target="_blank" class="btn">
-          📄 View CV (English)
+          📄 View Resume (English)
         </a>
       </section>
 
-      <!-- Section téléchargement CV français -->
+      <!-- CV Download (French) Section -->
       <section id="cv-fr">
-        <h2>Download my CV (French)</h2>
-        <a href="CV-Thibault_Depeige.pdf" download target="_blank" class="btn">
-          📄 Download CV (French PDF)
+        <h2>Download My CV (French)</h2>
+        <a href="Depeige_Thibault_CV.pdf" download target="_blank" class="btn">
+          📄 Download CV (French – PDF)
         </a>
       </section>
 
-      <!-- Section projets GitHub -->
+      <!-- GitHub Projects Section -->
       <section id="github-projects">
         <h2>My GitHub Projects</h2>
         <div id="projects-list">
-          <!-- Chargé via JS -->
+          <!-- Loaded via github-projects.js -->
         </div>
       </section>
     </main>
+
+    <!-- Scripts -->
     <script src="script.js"></script>
     <script src="github-projects.js"></script>
+
     <footer>
       <p>© 2025 Thibault Depeige. All rights reserved.</p>
     </footer>
